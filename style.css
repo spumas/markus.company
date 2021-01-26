@@ -44,7 +44,7 @@ h1, h2, h3, h4, p {
     font-weight: 600;
     color: white;
 }
-li, #logo {
+li, #logo, #about img {
     transition: all 200ms;
     -webkit-transition: all 200ms;
     -moz-transition: all 200ms;
@@ -67,19 +67,19 @@ header {
 
 }
 #logo {
-    width: 130px;
+    width: 83px;
     float: left;
-    margin: 6px 0 0 50px;
+    margin: 0px 0 0 50px;
 }
 #logo img {
-    width: 100%;
+    transform: scale(1.9)
 }
 #logo:hover {
-    opacity: 0.5;
+    transform: scale(1.1)
 }
 header nav {
     float: right;
-    margin: 27px 0 50px 0;
+    margin: 24px 0 50px 0;
 }
 header nav ul li {
     float: left;
@@ -113,4 +113,7 @@ header nav ul li:hover {
 }
 #work h2 {
     padding-bottom: 40px;
+}
+#about img:hover {
+    transform: scale(1.1);
 }
