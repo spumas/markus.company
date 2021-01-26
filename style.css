@@ -69,7 +69,7 @@ header {
 #logo {
     width: 83px;
     float: left;
-    margin: 0px 0 0 50px;
+    margin: 0 0 0 50px;
 }
 #logo img {
     transform: scale(1.9)
@@ -94,7 +94,7 @@ header nav ul li:hover {
     margin: 0;
 }
 #home h1 {
-    margin: 300px auto 0 auto;
+    margin: auto auto 0 auto;
     font-size: 110px;
     color: white;
 }
