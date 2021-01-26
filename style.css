@@ -56,21 +56,22 @@ a:visited {
     text-decoration: none;
 }
 header {
-    height:80px;
+    height:160px;
     margin-top: 33px;
     background: white;
     z-index: 1;
-    border-radius: 40px;
+    border-radius: 80px;
     position: fixed;
     top: 0;
     margin-left: 33px;
     margin-right: 33px;
+    box-shadow
 
 }
 #logo {
     width: 83px;
     float: left;
-    margin: 0 0 0 50px;
+    margin: 40px 0 0 40px;
 }
 #logo img {
     transform: scale(1.9)
@@ -80,15 +81,16 @@ header {
 }
 header nav {
     float: right;
-    margin: 24px 0 50px 0;
+    margin: 20px 0 50px 0;
 }
 header nav ul li {
-    float: left;
+    float: center;
     margin-right: 50px;
     margin-left: 50px;
+    shape-margin: 5px;
 }
 header nav ul li:hover {
-    padding-top: 5px;
+    transform: scale(1.05)
 }
 #home, #about, #work, #contact { 
     padding: 0;
