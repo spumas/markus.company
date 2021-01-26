@@ -110,6 +110,11 @@ header nav ul li:hover {
 }
 #work li {
     display: inline-flex;
+    display: compact;
+    padding-top: 80px;
+}
+#work li:hover {
+    transform: scale(1.05)
 }
 #work h2 {
     padding-bottom: 40px;
