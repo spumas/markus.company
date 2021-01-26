@@ -1,0 +1,116 @@
+html, body, section, h3, h2 {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+body {
+    background: url(img/landing.svg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #171717;
+}
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    color: #171717;
+    font-size: 25px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    color: black;
+}
+section {
+    min-height: 70%;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+li, #logo {
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transiton: all 200ms;
+}
+
+a:visited {
+    text-decoration: none;
+}
+header {
+    height:80px;
+    margin-top: 33px;
+    background: white;
+    z-index: 1;
+    border-radius: 40px;
+    position: fixed;
+    top: 0;
+    margin-left: 33px;
+    margin-right: 33px;
+
+}
+#logo {
+    width: 130px;
+    float: left;
+    margin: 6px 0 0 50px;
+}
+#logo img {
+    width: 100%;
+}
+#logo:hover {
+    opacity: 0.5;
+}
+header nav {
+    float: right;
+    margin: 27px 0 50px 0;
+}
+header nav ul li {
+    float: left;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+header nav ul li:hover {
+    padding-top: 5px;
+}
+#home, #about, #work, #contact { 
+    padding: 0;
+    margin: 0;
+}
+#home h1 {
+    margin: 300px auto 0 auto;
+    font-size: 110px;
+    color: white;
+}
+#home h2 {
+    font-size: 32px;
+    color: white;
+}
+#about, #work, #contact h3 {
+    font-size: 50px;
+}
+#about img {
+    width: 500px;
+}
+#work li {
+    display: inline-flex;
+}
+#work h2 {
+    padding-bottom: 40px;
+}
