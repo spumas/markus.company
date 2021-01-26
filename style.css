@@ -122,9 +122,26 @@ header nav ul li:active {
 #work li:hover {
     transform: scale(1.05)
 }
-#work h2 {
+#work h3 {
     padding-bottom: 40px;
+    position: center;
 }
 #about img {
-    width: 30%
+    width: 30%;
+    float: left;
+    padding-left: 200px;
+    padding-top: 80px;
+}
+#about {
+    padding-bottom: 200px;
+}
+#about p {
+    width: 50%;
+    text-align: left;
+    float: right;
+    padding-right: 100px;
+}
+#about h3 {
+
+    position: center;
 }
