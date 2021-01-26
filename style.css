@@ -132,12 +132,3 @@ header nav ul li:hover {
     width: 300px;
     overflow-y: scroll;
 }
-
-body {
-    background: #09f;
-    transition: background 0.5s ease-out;
-}
-
-    body:hover {
-        background: #f90;
-    }
