@@ -40,7 +40,7 @@ section {
     padding: 0;
     margin: 0;
 }
-h1, h2, h3, h4, p {
+h1, h2, h3, h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: white;
@@ -65,8 +65,10 @@ header {
     top: 0;
     margin-left: 33px;
     margin-right: 33px;
-    box-shadow
-
+    opacity: 0.9;
+}
+header.background {
+    filter: blur(5px);
 }
 #logo {
     width: 55px;
@@ -124,6 +126,7 @@ header nav ul li:active {
 }
 #work h3 {
     padding-bottom: 40px;
+    padding-top: 100px;
     position: center;
 }
 #about img {
@@ -134,12 +137,17 @@ header nav ul li:active {
 }
 #about {
     padding-bottom: 200px;
+    background-color: white;
+    height: 300px;
 }
 #about p {
     width: 50%;
     text-align: left;
     float: right;
     padding-right: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: black;
 }
 #about h3 {
 
