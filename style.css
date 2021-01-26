@@ -114,9 +114,6 @@ header nav ul li:active {
 #about, #work, #contact h3 {
     font-size: 50px;
 }
-#about img {
-    width: 500px;
-}
 #work li {
     display: inline-flex;
     display: compact;
@@ -128,6 +125,6 @@ header nav ul li:active {
 #work h2 {
     padding-bottom: 40px;
 }
-#about img:hover {
-    transform: scale(1.1);
+#about img {
+    width: 30%
 }
