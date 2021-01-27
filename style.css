@@ -45,7 +45,7 @@ h1, h2, h3, h4, #footer {
     font-weight: 700;
     color: white;
 }
-li, #logo, #about img, nav, ul {
+li, #logo, #about img, #contact h3, nav, ul {
     transition: all 200ms;
     -webkit-transition: all 200ms;
     -moz-transition: all 200ms;
@@ -165,8 +165,6 @@ header nav ul li:active {
 #contact {
     padding-top: 23%;
 }
-
-
 #contact h3:hover {
-    transform: scale(0.95);
+    transform: scale(0.96);
 }
