@@ -132,8 +132,8 @@ header nav ul li:active {
 #about img {
     width: 30%;
     float: left;
-    margin-left: 20%;
-    margin-top: 30%;
+    margin-left: 5%;
+    margin-top: 12%;
 }
 #about img:hover {
     transform: scale(1.04)
@@ -141,14 +141,14 @@ header nav ul li:active {
 #about {
     padding-bottom: 200px;
     background-color: white;
-    height: 300px;
+    height: 100%;
 }
 #about p {
     width: 50%;
     text-align: left;
     float: right;
     padding-right: 5%;
-    padding-top: 20%;
+    padding-top: 7%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     color: black;
@@ -157,8 +157,8 @@ header nav ul li:active {
     position: center;
 }
 #footer {
-    align-content: center;
-}
-#about p, img {
-    display: inline-flex;
+    margin-top: 10%;
+    position: center;
+    padding-bottom: 0;
+    padding-top: 0;
 }
