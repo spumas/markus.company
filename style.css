@@ -162,3 +162,11 @@ header nav ul li:active {
     padding-bottom: 0;
     padding-top: 0;
 }
+#contact {
+    padding-top: 23%;
+}
+
+
+#contact h3:hover {
+    transform: scale(0.95);
+}
