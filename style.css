@@ -21,9 +21,9 @@ body {
 }
 a {
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
-    font-weight: 800;
+    font-weight: 700;
     color: #171717;
     font-size: 25px;
 }
@@ -41,8 +41,8 @@ section {
     margin: 0;
 }
 h1, h2, h3, h4, #footer {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
     color: white;
 }
 li, #logo, #about img, nav, ul {
@@ -56,19 +56,18 @@ a:visited {
     text-decoration: none;
 }
 header {
-    height: 80px;
-    margin-top: 33px;
+    min-height: 80px;
+    max-height: 10%;
+    margin-top: 2%;
+    margin-left: 2.5%;
     background: white;
     z-index: 1;
-    border-radius: 80px;
+    border-radius: 40px/50%;
+
+    opacity: 0.9;
     position: fixed;
     top: 0;
-    margin-left: 33px;
-    margin-right: 33px;
-    opacity: 0.9;
-}
-header.background {
-    filter: blur(5px);
+    width: 95%;
 }
 #logo {
     width: 55px;
@@ -85,13 +84,12 @@ header.background {
     transform: scale(0.8)
 }
 header nav {
-    float: right;
-    margin: 25px 0 50px 0;
+    display: inline;
+    text-align: inline;
 }
 header nav ul li {
-    float: left;
-    margin-right: 50px;
-    margin-left: 50px;
+    display: inline-block;
+    margin: 25px 30px 0 0;
 }
 header nav ul li:hover {
     transform: scale(1.1)
@@ -110,8 +108,10 @@ header nav ul li:active {
     color: white;
 }
 #home h2 {
-    font-size: 32px;
+    font-size: 40px;
     color: white;
+    padding-top: 20px;
+    opacity: 0.9;
 }
 #about, #work {
     font-size: 50px;
@@ -126,14 +126,16 @@ header nav ul li:active {
 }
 #work h3 {
     padding-bottom: 40px;
-    padding-top: 100px;
-    position: center;
+    padding-top: 200px;
 }
 #about img {
     width: 30%;
     float: left;
     padding-left: 200px;
     padding-top: 200px;
+}
+#about img:hover {
+    transform: scale(1.04)
 }
 #about {
     padding-bottom: 200px;
@@ -146,12 +148,11 @@ header nav ul li:active {
     float: right;
     padding-right: 100px;
     padding-top: 100px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     color: black;
 }
 #about h3 {
-
     position: center;
 }
 #footer {
