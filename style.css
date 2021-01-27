@@ -133,7 +133,7 @@ header nav ul li:active {
     width: 30%;
     float: left;
     padding-left: 200px;
-    padding-top: 80px;
+    padding-top: 200px;
 }
 #about {
     padding-bottom: 200px;
@@ -145,6 +145,7 @@ header nav ul li:active {
     text-align: left;
     float: right;
     padding-right: 100px;
+    padding-top: 100px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: black;
@@ -152,4 +153,7 @@ header nav ul li:active {
 #about h3 {
 
     position: center;
+}
+#footer {
+    align-content: center;
 }
