@@ -14,19 +14,17 @@ html, body {
 
 }
 body {
-    background: url(img/landing.svg);
-    background-position: center center;
-    background-size: cover;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: #171717;
 }
 a {
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     font-weight: 700;
-    color: #171717;
-    font-size: 2.5vh;
+    color: #202124;
+    font-size: 2.5em;
 }
 ul {
     list-style-type: none;
@@ -44,7 +42,7 @@ section {
 h1, h2, h3, h4, #footer {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
-    color: white;
+    color: #202124;
 }
 li, #logo, #about img, #contact h3, nav, ul, #home h1, #home h2 {
     transition: all 200ms;
@@ -60,13 +58,11 @@ header {
     min-height: 80px;
     margin-top: 3%;
     margin-left: 3%;
-    background: white;
     z-index: 1;
     border-radius: 40px/50%;
-    opacity: 0.9;
-    position: fixed;
-    top: 0;
     width: 94%;
+    position: static;
+    top: 0;
 }
 #logo {
     width: 55px;
@@ -74,7 +70,7 @@ header {
     margin: 13px 0 0 13px;
 }
 #logo img {
-    transform: scale(2)
+    transform: scale(3)
 }
 #logo:hover {
     transform: scale(1.1)
@@ -91,7 +87,7 @@ header nav ul li {
     margin: 25px 7% 0 0;
 }
 header nav ul li:hover {
-    transform: scale(1.1)
+    transform: ;
 }
 header nav ul li:active {
     transform: scale(0.9);
@@ -103,23 +99,24 @@ header nav ul li:active {
     scroll-snap-align: start;
 }
 #home h1 {
-    margin: 400px auto 0 auto;
+    margin: 10% auto 0 auto;
     font-size: 10vw;
-    color: white;
+    color: #202124;
 }
 #home h1:hover {
     transform: scale(0.98);
+    cursor: pointer;
 }
 #home h2 {
     font-size: 40px;
-    color: white;
-    padding-top: 20px;
+    color: #202124;
     opacity: 0.9;
     padding-left: 5%;
     padding-right: 5%;
 }
 #home h2:hover {
-        transform: scale(0.98);
+    transform: scale(0.98);
+    cursor: pointer;
 }
 #about, #work {
     font-size: 50px;
@@ -174,6 +171,11 @@ header nav ul li:active {
 }
 #contact {
     padding-top: 23%;
+    background-color: white;
+    height: 100%;
+}
+#contact h2, #contact h3 {
+    color: #202124;
 }
 #contact h3:hover {
     transform: scale(0.96);
