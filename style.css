@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #202124;
+    --secondary-color: #ffffff;
+    --font-color: #202124;
+    --bg-color: #ffffff;
+}
 html, body, section, h3, h2 {
     margin: 0;
     padding: 0;
@@ -10,11 +16,10 @@ html, body {
     padding: 0;
     height: 100%;
     text-align: center;
-    scroll-snap-type: y mandatory;
-
+    scroll-snap-type: y proximity;
 }
 body {
-    background-color: #ffffff;
+    background-color: var(--bg-color);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -23,16 +28,13 @@ a {
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     font-weight: 700;
-    color: #202124;
+    color: var(--font-color);
     font-size: 2.5em;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-li {
-    color: black;
 }
 section {
     min-height: 70%;
@@ -42,7 +44,7 @@ section {
 h1, h2, h3, h4, #footer {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
-    color: #202124;
+    color: var(--font-color);
 }
 li, #logo, #about img, #contact h3, nav, ul, #home h1, #home h2 {
     transition: all 200ms;
@@ -87,7 +89,7 @@ header nav ul li {
     margin: 25px 7% 0 0;
 }
 header nav ul li:hover {
-    transform: ;
+    transform: scale(1.05);
 }
 header nav ul li:active {
     transform: scale(0.9);
@@ -101,7 +103,7 @@ header nav ul li:active {
 #home h1 {
     margin: 10% auto 0 auto;
     font-size: 10vw;
-    color: #202124;
+    color: var(--font-color);
 }
 #home h1:hover {
     transform: scale(0.98);
@@ -109,7 +111,7 @@ header nav ul li:active {
 }
 #home h2 {
     font-size: 40px;
-    color: #202124;
+    color: var(--font-color);
     opacity: 0.9;
     padding-left: 5%;
     padding-right: 5%;
@@ -147,7 +149,7 @@ header nav ul li:active {
 }
 #about {
     padding-bottom: 200px;
-    background-color: white;
+    background-color: var(--bg-color);
     height: 100%;
 }
 #about p {
@@ -158,24 +160,29 @@ header nav ul li:active {
     padding-top: 14%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
-    color: black;
+    color: var(--font-color);
 }
 #about h3 {
     position: center;
 }
 #footer {
-    margin-top: 10%;
-    position: center;
-    padding-bottom: 0;
-    padding-top: 0;
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+    background-color: var(--font-color);
+}
+#footer p {
+    padding-top: 100px;
+    color: var(--secondary-color);
 }
 #contact {
     padding-top: 23%;
-    background-color: white;
+    background-color: var(--bg-color);
     height: 100%;
 }
 #contact h2, #contact h3 {
-    color: #202124;
+    color: var(--font-color);
 }
 #contact h3:hover {
     transform: scale(0.96);
