@@ -64,7 +64,7 @@ html, body {
     scroll-snap-type: y proximity;
 }
 body {
-    background-color: #1A1A1A;
+    background-color: #0e131b;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -73,10 +73,10 @@ body {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    color: #ffffff;
+    color: #475e85;
     font-size: 1.7em;
     overflow: hidden;
-    background: linear-gradient(to right, #a1a1a1, #a1a1a1 50%, #ffffff 50%);
+    background: linear-gradient(to right, #a1a1a1, #a1a1a1 50%, #475e85 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -157,25 +157,31 @@ header nav ul li:active {
     scroll-snap-align: start;
 }
 #home img, #home h1, #home h2 {
-    display: inline-block;
+    display: inline-flexbox;
+    align-items: ;
 }
 #home img {
-    height: 50%;
-    padding-left: 2%;
+    height: 60%;
+    float: right;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+#home h1, #home h2 {
+    text-align: left;
+    padding-left: 10%;
 }
 #home h1 {
     font-size: 5vw;
+    font-weight: 700;
     color: #ffffff;
-    position: absolute;
+    padding-top: 20%;
 }
 #home h1:hover {
     cursor: pointer;
 }
 #home h2 {
     font-size: 1vw;
-    color: #c7c7c7;
-    opacity: 0.9;
-    position: relative;
+    color: #475e85;
 }
 #home h2:hover {
     cursor: pointer;
@@ -200,17 +206,18 @@ header nav ul li:active {
 #about {
     padding-bottom: 200px;
     background-color: #ffffff;
-    height: 100%;
+    height: 50%;
+    width: 50%;
 }
 #about p {
     width: 50%;
     text-align: left;
-    float: right;
     padding-right: 5%;
     padding-top: 19%;
+    padding-left: 19%;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    color: #171717;
+    color: #475e85;
 }
 #about h3 {
     position: center;
