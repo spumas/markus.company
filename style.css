@@ -64,7 +64,7 @@ html, body {
     scroll-snap-type: y proximity;
 }
 body {
-    background-image: linear-gradient(0deg, #0f1011 70%, #061d29 100%);
+    background-color: #1A1A1A;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
