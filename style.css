@@ -1,9 +1,54 @@
-:root {
-    --primary-color: #202124;
-    --secondary-color: #ffffff;
-    --font-color: #202124;
-    --bg-color: #ffffff;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+<!-- CSS RESET END-->
+
 html, body, section, h3, h2 {
     margin: 0;
     padding: 0;
@@ -19,32 +64,42 @@ html, body {
     scroll-snap-type: y proximity;
 }
 body {
-    background-color: var(--bg-color);
+    background-image: linear-gradient(0deg, #0f1011 70%, #061d29 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
 }
-a {
+#main-nav a {
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    color: var(--font-color);
-    font-size: 2.5em;
+    color: #ffffff;
+    font-size: 2em;
+    overflow: hidden;
+    background: linear-gradient(to right, #a1a1a1, #a1a1a1 50%, #ffffff 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 175ms ease;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 section {
     min-height: 70%;
     padding: 0;
     margin: 0;
 }
-h1, h2, h3, h4, #footer {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
-    color: var(--font-color);
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
 }
 li, #logo, #about img, #contact h3, nav, ul, #home h1, #home h2 {
     transition: all 200ms;
@@ -52,8 +107,11 @@ li, #logo, #about img, #contact h3, nav, ul, #home h1, #home h2 {
     -moz-transition: all 200ms;
     -o-transiton: all 200ms;
 }
-
-a:visited {
+#main-nav a:hover {
+    background-position: 0 100%;
+    transform: scale(1.05);
+}
+#main-nav a:visited {
     text-decoration: none;
 }
 header {
@@ -62,14 +120,15 @@ header {
     margin-left: 3%;
     z-index: 1;
     border-radius: 40px/50%;
-    width: 94%;
+    width: 95%;
     position: static;
     top: 0;
+    padding-top: 2%;
 }
 #logo {
     width: 55px;
     float: left;
-    margin: 13px 0 0 13px;
+    margin: 13px 13px 13px 10vh;
 }
 #logo img {
     transform: scale(3)
@@ -88,9 +147,6 @@ header nav ul li {
     display: inline-block;
     margin: 25px 7% 0 0;
 }
-header nav ul li:hover {
-    transform: scale(1.05);
-}
 header nav ul li:active {
     transform: scale(0.9);
 }
@@ -102,22 +158,21 @@ header nav ul li:active {
 }
 #home h1 {
     margin: 10% auto 0 auto;
-    font-size: 10vw;
-    color: var(--font-color);
+    font-size: 8vw;
+    color: #ffffff;
 }
 #home h1:hover {
-    transform: scale(0.98);
     cursor: pointer;
 }
 #home h2 {
-    font-size: 40px;
-    color: var(--font-color);
+    font-size: 2.5vw;
+    color: #c7c7c7;
     opacity: 0.9;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 2%;
 }
 #home h2:hover {
-    transform: scale(0.98);
     cursor: pointer;
 }
 #about, #work {
@@ -149,7 +204,7 @@ header nav ul li:active {
 }
 #about {
     padding-bottom: 200px;
-    background-color: var(--bg-color);
+    background-color: #ffffff;
     height: 100%;
 }
 #about p {
@@ -157,10 +212,10 @@ header nav ul li:active {
     text-align: left;
     float: right;
     padding-right: 5%;
-    padding-top: 14%;
-    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 19%;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    color: var(--font-color);
+    color: #171717;
 }
 #about h3 {
     position: center;
@@ -170,20 +225,28 @@ header nav ul li:active {
     position: relative;
     height: 200px;
     margin-top: -200px;
-    background-color: var(--font-color);
+    background-color: #171717;
 }
 #footer p {
     padding-top: 100px;
-    color: var(--secondary-color);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
 }
 #contact {
     padding-top: 23%;
-    background-color: var(--bg-color);
+    background-color: #ffffff;
     height: 100%;
 }
-#contact h2, #contact h3 {
-    color: var(--font-color);
+#contact h2 {
+    padding-bottom: 2%;
+    font-weight: 800;
 }
-#contact h3:hover {
-    transform: scale(0.96);
+#contact h1, #contact h2, #contact h3 {
+    color: #171717;
+}
+
+#contact a {
+    text-decoration: none;
+    font-size: 2vw;
+    color: #000000;
 }
