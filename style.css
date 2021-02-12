@@ -74,7 +74,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #ffffff;
-    font-size: 2em;
+    font-size: 1.7em;
     overflow: hidden;
     background: linear-gradient(to right, #a1a1a1, #a1a1a1 50%, #ffffff 50%);
     background-clip: text;
@@ -156,21 +156,26 @@ header nav ul li:active {
     height: 100%;
     scroll-snap-align: start;
 }
+#home img, #home h1, #home h2 {
+    display: inline-block;
+}
+#home img {
+    height: 50%;
+    padding-left: 2%;
+}
 #home h1 {
-    margin: 10% auto 0 auto;
-    font-size: 8vw;
+    font-size: 5vw;
     color: #ffffff;
+    position: absolute;
 }
 #home h1:hover {
     cursor: pointer;
 }
 #home h2 {
-    font-size: 2.5vw;
+    font-size: 1vw;
     color: #c7c7c7;
     opacity: 0.9;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
+    position: relative;
 }
 #home h2:hover {
     cursor: pointer;
@@ -184,7 +189,6 @@ header nav ul li:active {
     padding-top: 80px;
     padding-left: 5%;
     padding-right: 5%;
-
 }
 #work li:hover {
     transform: scale(1.05)
@@ -192,15 +196,6 @@ header nav ul li:active {
 #work h3 {
     padding-bottom: 40px;
     padding-top: 200px;
-}
-#about img {
-    width: 30%;
-    float: left;
-    margin-left: 5%;
-    margin-top: 12%;
-}
-#about img:hover {
-    transform: scale(1.04)
 }
 #about {
     padding-bottom: 200px;
