@@ -69,7 +69,7 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
-#main-nav a {
+a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -83,6 +83,7 @@ body {
     background-size: 200% 100%;
     background-position: 100%;
     transition: background-position 175ms ease;
+    z-index: 1;
 }
 
 ul {
@@ -107,11 +108,11 @@ li, #logo, #about img, #contact h3, nav, ul, #home h1, #home h2 {
     -moz-transition: all 200ms;
     -o-transiton: all 200ms;
 }
-#main-nav a:hover {
+a:hover {
     background-position: 0 100%;
     transform: scale(1.05);
 }
-#main-nav a:visited {
+a:visited {
     text-decoration: none;
 }
 header {
@@ -155,10 +156,11 @@ header nav ul li:active {
     margin: 0;
     height: 100%;
     scroll-snap-align: start;
+    border-style: dotted 3px white;
 }
 #home img, #home h1, #home h2 {
     display: inline-flexbox;
-    align-items: ;
+    align-items: center;
 }
 #home img {
     height: 60%;
@@ -166,6 +168,7 @@ header nav ul li:active {
     padding-right: 10%;
     padding-top: 5%;
 }
+
 #home h1, #home h2 {
     text-align: left;
     padding-left: 10%;
@@ -174,16 +177,27 @@ header nav ul li:active {
     font-size: 5vw;
     font-weight: 700;
     color: #ffffff;
-    padding-top: 20%;
+    padding-top: 1%;
 }
 #home h1:hover {
     cursor: pointer;
 }
 #home h2 {
-    font-size: 1vw;
+    font-size: 3vw;
     color: #475e85;
+    padding-top: 16%;
 }
 #home h2:hover {
+    cursor: pointer;
+}
+#home h3 {
+    text-align: left;
+    font-size: 1vw;
+    padding-left: 10%;
+    padding-top: 1%;
+    color: #a1a1a1;
+}
+#home h3:hover {
     cursor: pointer;
 }
 #about, #work {
@@ -202,15 +216,16 @@ header nav ul li:active {
 #work h3 {
     padding-bottom: 40px;
     padding-top: 200px;
+    font-size: 2vw;
+    align-items: center;
 }
 #about {
     padding-bottom: 200px;
-    background-color: #ffffff;
     height: 50%;
     width: 50%;
 }
 #about p {
-    width: 50%;
+    width: 90%;
     text-align: left;
     padding-right: 5%;
     padding-top: 19%;
