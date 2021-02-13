@@ -239,6 +239,7 @@ header nav ul li:active {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: #475e85;
+    line-height: 120%;
 }
 #about h3 {
     position: center;
