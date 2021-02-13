@@ -72,6 +72,9 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 header a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
