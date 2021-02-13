@@ -55,13 +55,16 @@ html, body, section, h3, h2 {
 }
 html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
 }
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     text-align: center;
-    scroll-snap-type: y proximity;
 }
 body {
     background-color: #0e131b;
@@ -69,12 +72,12 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
-a {
+header a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #475e85;
-    font-size: 2em;
+    font-size: 1.5vw;
     overflow: hidden;
     background: linear-gradient(to right, #a1a1a1, #a1a1a1 50%, #475e85 50%);
     background-clip: text;
@@ -108,7 +111,7 @@ li, #logo, #about img, #contact h3, nav, ul, #home h1, #home h2 {
     -moz-transition: all 200ms;
     -o-transiton: all 200ms;
 }
-a:hover {
+header a:hover {
     background-position: 0 100%;
     transform: scale(1.05);
 }
@@ -203,9 +206,11 @@ header nav ul li:active {
 #about, #work {
     font-size: 50px;
 }
+#work {
+    background-color: #ffffff;
+}
 #work li {
-    display: inline-block;
-    display: compact;
+    display: inline-flex;
     padding-top: 80px;
     padding-left: 5%;
     padding-right: 5%;
@@ -218,6 +223,7 @@ header nav ul li:active {
     padding-top: 200px;
     font-size: 2vw;
     align-items: center;
+    color: #475E85;
 }
 #about {
     padding-bottom: 200px;
@@ -240,8 +246,8 @@ header nav ul li:active {
 #footer {
     clear: both;
     position: relative;
-    height: 200px;
-    margin-top: -200px;
+    height: 20px;
+    margin-top: 5%;
     background-color: #171717;
 }
 #footer p {
@@ -250,20 +256,21 @@ header nav ul li:active {
     font-family: 'Roboto', sans-serif;
 }
 #contact {
-    padding-top: 23%;
-    background-color: #ffffff;
     height: 100%;
+    background-color: #ffffff;
+    background-size: 50%;
+    background-position: center;
 }
 #contact h2 {
-    padding-bottom: 2%;
     font-weight: 800;
 }
-#contact h1, #contact h2, #contact h3 {
+#contact h1, #contact h2, #contact h3, #contact a {
     color: #171717;
+    position: absolute;
 }
 
 #contact a {
     text-decoration: none;
-    font-size: 2vw;
-    color: #000000;
+    color: #171717;
+    padding-top: 20%;
 }
