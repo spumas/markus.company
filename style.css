@@ -72,7 +72,7 @@ body {
     background-attachment: scroll;
     background-position: center;
     background-image: url("img/background.png");
-    background-size: 130%;
+    background-size: 170%;
 }
 body::-webkit-scrollbar {
     display: none;
