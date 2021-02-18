@@ -183,7 +183,7 @@ header nav ul li:active {
 }
 #home h2 {
     font-size: 3vw;
-    color: #475e85;
+    color: #337eff;
     padding-top: 16%;
 }
 #home h2:hover {
@@ -219,7 +219,7 @@ header nav ul li:active {
     padding-top: 200px;
     font-size: 2vw;
     align-items: center;
-    color: #475E85;
+    color: #337eff;
 }
 #about {
     padding-bottom: 200px;
@@ -234,7 +234,7 @@ header nav ul li:active {
     padding-left: 19%;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    color: #475e85;
+    color: #337eff;
     line-height: 120%;
 }
 #about h3 {
