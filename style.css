@@ -129,7 +129,8 @@ header {
     margin: 13px 13px 13px 10vh;
 }
 #logo img {
-    transform: scale(3)
+    transform: scale(3);
+    display: flex;
 }
 #logo:hover {
     transform: scale(1.1)
@@ -153,19 +154,17 @@ header nav ul li:active {
     margin: 0;
     height: 100%;
     scroll-snap-align: start;
-    border-style: dotted 3px white;
 }
 #home img, #home h1, #home h2 {
     display: inline-flexbox;
-    align-items: center;
+    align-items: baseline;
     z-index: 1;
 }
 #home img {
-    max-height: 60%;
+    display: flex;
     float: right;
-    padding-right: 10%;
-    padding-top: 5%;
     z-index: 1;
+    height: vertical center;
 }
 
 #home h1, #home h2 {
