@@ -152,19 +152,15 @@ header nav ul li:active {
 #home, #about, #work, #contact { 
     padding: 0;
     margin: 0;
-    height: 100%;
-    scroll-snap-align: start;
 }
 #home img, #home h1, #home h2 {
-    display: inline-flexbox;
-    align-items: baseline;
+    display:flex;
     z-index: 1;
 }
 #home img {
     display: flex;
     float: right;
     z-index: 1;
-    height: vertical center;
 }
 
 #home h1, #home h2 {
@@ -222,7 +218,7 @@ header nav ul li:active {
 }
 #about {
     padding-bottom: 200px;
-    height: 50%;
+    height: 100%;
     width: 50%;
 }
 #about p {
